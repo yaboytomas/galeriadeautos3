@@ -1,0 +1,226 @@
+/*menu/
+menu{
+    background-color: #ff511d;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    margin: 10px auto 0;
+    width: 750px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 30px;
+}
+
+menu a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    align-content: center;
+}
+
+menu li{
+    display: inline-block;
+}
+
+menu li .active{
+    font-weight: bold;
+    color: black;
+}
+
+/*pseudoselector de menu*/
+/*menu a:hover{
+    background-color: goldenrod;
+    font-weight: bold;
+}
+
+
+
+
+ */
+
+
+/*bootstrap menu*/
+.container-fluid a:hover {
+    font-weight: bold;
+    color: white;
+}
+
+/*header*/
+header{
+    background-size: cover;
+    background-position: center;
+}
+
+/*inicio*/
+.inicio button:hover {
+    background-color: #007BFF; /* Change the color to Bootstrap primary blue when hovered */
+    color: white; /* Change the text color to white when hovered */
+}
+
+.inicio img, .grid-container img {
+    transition: transform 0.3s ease;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.inicio img:hover, .grid-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.inicio{
+    text-align: center;
+    font-family: Times New Roman;
+    margin: 20px;
+    border: 1px solid #000;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    margin-bottom: 1em;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+.inicio{
+    background-color: #dddddd;
+}
+
+/*galeria*/
+.gallery button:hover {
+    background-color: #007BFF; /* Change the color to Bootstrap primary blue when hovered */
+    color: white; /* Change the text color to white when hovered */
+}
+
+.gallery{
+    text-align: center;
+    font-family: "Times New Roman";
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #000;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    margin-bottom: 1em;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+/* Grid container styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.grid-container img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    /* Agrega una transición para suavizar el cambio de sombra en el hover */
+    transition: box-shadow 0.3s ease;
+}
+
+.grid-container img:hover {
+    /* Aumenta la sombra en el hover para dar un efecto de "elevación" */
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+/*contacto*/
+#backgroundVideo {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+.contacto{
+    text-align: center;
+    font-family: "Times New Roman";
+    margin: 20px;
+    color: white;
+    transition: all 0.3s ease;
+    margin-bottom: 1em;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+.contacto {
+    text-shadow:
+            -1px 0 black,  /* Add black shadow to the right */
+            0 1px black,  /* Add black shadow below */
+            1px 0 black,  /* Add black shadow to the left */
+            0 -1px black; /* Add black shadow above */
+}
+
+
+/*form*/
+.form{
+    margin: 5px;  /* Adjust as needed */
+    padding: 5px;  /* Adjust as needed */
+    border: 10px solid black; /* Example border */
+    background-color: grey;
+    border-radius: 20px;
+}
+
+.form {  /* Target the entire form container */
+    margin: 20px auto;  /* Add some margin and center horizontally */
+    width: 50%;  /* Adjust width as needed */
+    border: 1px solid #ddd;  /* Add a border */
+    padding: 15px;  /* Add some padding */
+}
+
+.form label {  /* Style all labels */
+    display: block;  /* Make labels display on a new line */
+    margin-bottom: 5px;  /* Add some space below labels */
+    font-weight: bold;  /* Make labels bolder */
+}
+
+.form input[type="text"],  /* Style text and email input fields */
+.form input[type="email"] {
+    width: 100%;  /* Set width to 100% */
+    padding: 8px;  /* Add some padding */
+    border: 1px solid #ccc;  /* Add a border */
+    border-radius: 3px;  /* Add rounded corners */
+}
+
+.form select {  /* Style the select box */
+    width: 100%;  /* Set width to 100% */
+    padding: 8px;  /* Add some padding */
+    border: 1px solid #ccc;  /* Add a border */
+    border-radius: 3px;
+    cursor: pointer;/* Add rounded corners */
+}
+
+.form textarea {  /* Style the textarea */
+    width: 100%;  /* Set width to 100% */
+    min-height: 100px;  /* Set a minimum height */
+    padding: 8px;  /* Add some padding */
+    border: 1px solid #ccc;  /* Add a border */
+    border-radius: 3px;  /* Add rounded corners */
+}
+
+.form input[type="submit"] {  /* Style the submit button */
+    background-color: white;  /* Set background color */
+    color: black;  /* Set text color */
+    padding: 10px 20px;  /* Add some padding */
+    border: none;  /* Remove default border */
+    border-radius: 3px;  /* Add rounded corners */
+    cursor: pointer;  /* Change cursor to pointer on hover */
+}
+
+.form input[type="submit"]:hover {  /* Style submit button on hover */
+    background-color: blue;  /* Change background color on hover */
+}
+
+/*footer*/
+footer{
+    text-align: center;
+}
+
+.footercontacto{
+    color: white;
+}
+.footercontacto{
+    text-shadow:
+            -1px 0 black,  /* Add black shadow to the right */
+            0 1px black,  /* Add black shadow below */
+            1px 0 black,  /* Add black shadow to the left */
+            0 -1px black; /* Add black shadow above */
+}

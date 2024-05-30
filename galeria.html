@@ -39,10 +39,22 @@
         mundo de los superdeportivos. Cada Pagani es una obra maestra de diseño y rendimiento, construida con
         pasión y precisión. No pierdas la oportunidad de admirar estos vehículos excepcionales.</p>
     <div class="grid-container">
-        <img src="media/pagani.jpg"  alt="Pagani Zonda R">
-        <img src="media/pagani%202.jpg"   alt="Lamborghini Sesto Elemento">
-        <img src="media/pagani%203.jpeg"  alt="Lamborghini Sesto Elemento">
-        <img src="media/pagani%204.jpeg"   alt="Lamborghini Sesto Elemento">
+        <div class="image-container">
+            <img class="artwork" src="media/pagani.jpg"  alt="Pagani 1">
+            <button class="remove-button">Remove</button>
+        </div>
+        <div class="image-container">
+            <img class="artwork" src="media/pagani%202.jpg"   alt="Pagani 2">
+            <button class="remove-button">Remove</button>
+        </div>
+        <div class="image-container">
+            <img class="artwork" src="media/pagani%203.jpeg"  alt="Pagani 3">
+            <button class="remove-button">Remove</button>
+        </div>
+        <div class="image-container">
+            <img class="artwork" src="media/pagani%204.jpeg"   alt="Pagani 4">
+            <button class="remove-button">Remove</button>
+        </div>
     </div>
     <br>
     <br>
@@ -55,10 +67,22 @@
         Estos superdeportivos suecos son el epítome de la excelencia en ingeniería automotriz. Ven y descubre
         por qué Koenigsegg es sinónimo de velocidad y lujo.</P>
     <div class="grid-container">
-        <img src="media/jesko.jpg"   alt="Koenisegg Jesko">
-        <img src="media/koenisegg%202.jpg"   alt="Lamborghini Sesto Elemento">
-        <img src="media/koenisegg%203.jpeg"   alt="Lamborghini Sesto Elemento">
-        <img src="media/koenisegg%204.jpeg"   alt="Lamborghini Sesto Elemento">
+        <div class="image-container">
+            <img class="artwork" src="media/jesko.jpg"   alt="Koenisegg 1">
+            <button class="remove-button">Remove</button>
+        </div>
+        <div class="image-container">
+            <img class="artwork" src="media/koenisegg%202.jpg"   alt="Koenisegg 2">
+            <button class="remove-button">Remove</button>
+        </div>
+        <div class="image-container">
+            <img class="artwork" src="media/koenisegg%203.jpeg"   alt="Koenisegg 3">
+            <button class="remove-button">Remove</button>
+        </div>
+        <div class="image-container">
+            <img class="artwork" src="media/koenisegg%204.jpeg"   alt="Koenisegg 4">
+            <button class="remove-button">Remove</button>
+        </div>
     </div>
     <br>
     <br>
@@ -72,10 +96,22 @@
         rendimiento, construido con una dedicación inigualable. No te pierdas la oportunidad de apreciar
         estos vehículos extraordinarios.</p>
     <div class="grid-container">
-        <img src="media/lambo.jpg"  alt="Ferrari SF-90 Stradale">
-        <img src="media/lambo%202.jpeg"  alt="Lamborghini Sesto Elemento">
-        <img src="media/lamo%203.jpeg"  alt="Lamborghini Sesto Elemento">
-        <img src="media/lamo%204.jpeg"  alt="Lamborghini Sesto Elemento">
+        <div class="image-container">
+            <img class="artwork" src="media/lambo.jpg"  alt="Lamborghini 1">
+            <button class="remove-button">Remove</button>
+        </div>
+        <div class="image-container">
+            <img class="artwork" src="media/lambo%202.jpeg"  alt="Lamborghini 2">
+            <button class="remove-button">Remove</button>
+        </div>
+        <div class="image-container">
+            <img class="artwork" src="media/lamo%203.jpeg"  alt="Lamborghini 3">
+            <button class="remove-button">Remove</button>
+        </div>
+        <div class="image-container">
+            <img class="artwork" src="media/lamo%204.jpeg"  alt="Lamborghini 4">
+            <button class="remove-button">Remove</button>
+        </div>
     </div>
     <br>
     <br>
@@ -87,10 +123,22 @@
         Estos superdeportivos italianos son el pináculo de la excelencia en ingeniería automotriz. Ven y
         descubre por qué Ferrari es sinónimo de velocidad y lujo.</P>
     <div class="grid-container">
-        <img src="media/ferrari.jpg"   alt="Ferrari SF-90 Stradale">
-        <img src="media/ferrari%202.jpg"  alt="bla bla">
-        <img src="media/ferrari%203.jpeg"  alt="Lamborghini Sesto Elemento">
-        <img src="media/ferrari%204.jpeg"  alt="Lamborghini Sesto Elemento">
+        <div class="image-container">
+            <img class="artwork" src="media/ferrari.jpg"   alt="Ferrari 1">
+            <button class="remove-button">Remove</button>
+        </div>
+        <div class="image-container">
+            <img class="artwork" src="media/ferrari%202.jpg"  alt="Ferrari 2">
+            <button class="remove-button">Remove</button>
+        </div>
+        <div class="image-container">
+            <img class="artwork" src="media/ferrari%203.jpeg"  alt="Ferrari 3">
+            <button class="remove-button">Remove</button>
+        </div>
+        <div class="image-container">
+            <img class="artwork" src="media/ferrari%204.jpeg"  alt="Ferrari 4">
+            <button class="remove-button">Remove</button>
+        </div>
     </div>
     <br>
     <br>
@@ -100,8 +148,25 @@
 </div>
     <script src="script.js"></script>
     <script src="galeria.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 <footer>
     <p>Copyright 2024 Tomas Szabo Undurraga . All Rights Reserved.</p>
 </footer>
+<div class="modal" tabindex="-1" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Detalles de la imagen</h5>
+            </div>
+            <div class="modal-body">
+                <p id="textimg"> </p>
+                <img class="artwork" id="imgModal"  alt="">
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="closebtn" class="btn btn-primary">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
 </html>

@@ -45,25 +45,25 @@
         Ya seas un entusiasta de los autos o simplemente alguien que aprecia la belleza y la
         artesanía, nuestra galería tiene algo para todos. ¡Esperamos verte pronto!</p>
 
-    <div id="form">
-        <form class="form">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" placeholder="Kika Silva" required>
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" placeholder="kika@silva.com" required>
-            <label for="tipo">Tipo de solicitud:</label>
-            <select id="tipo" name="tipo" required>
-                <option value="compra">Consulta</option>
-                <option value="consulta">Compra</option>
-                <option value="venta">Venta</option>
-            </select>
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <br>
-            <br>
-            <input type="submit" value="Enviar">
+        <form id="contactoform" class="form">
+            <div id="formulario">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Kika Silva" required>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="kika@silva.com" required>
+                <label for="tipo">Tipo de solicitud:</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="compra">Consulta</option>
+                    <option value="consulta">Compra</option>
+                    <option value="venta">Venta</option>
+                </select>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <br>
+                <br>
+                <button type="submit" class="btn btn-primary" id="btn-submit" >Enviar</button>
+            </div>
         </form>
-    </div>
 
     <h2>Informacion de contacto</h2>
 

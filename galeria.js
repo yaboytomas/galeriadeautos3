@@ -28,13 +28,9 @@ function asignarComportamiento() {
 
     buttons.forEach(button => {
         button.addEventListener('click', function() {
-            // 'this' refers to the button that was clicked
-            // 'this.parentNode' refers to the parent div of the button
-            // 'this.parentNode.parentNode' refers to the parent div of the image-container div
             this.parentNode.parentNode.removeChild(this.parentNode);
         });
     });
 }
 
-// Pass asignarComportamiento as a callback, don't invoke it
 document.addEventListener('DOMContentLoaded', asignarComportamiento);

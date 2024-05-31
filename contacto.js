@@ -3,7 +3,7 @@ function revisarFormulario(event) {
     const form = event.target;
     const nombre = form.name.value;
     const email = form.email.value;
-    const mensaje = form.message.value;
+    const mensaje = form.message.value.toLowerCase(); // convert message to lowercase
     if (nombre === '' || email === '' || mensaje === '') {
         alert('Por favor, rellene todos los campos');
         return;
